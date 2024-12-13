@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guest Reviews - Simple B&B</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #00509e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            background-color: #f4c300;
+            padding: 10px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #00509e;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 30px;
+            max-width: 900px;
+            margin: 20px auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #00509e;
+        }
+        .testimonial {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+        }
+        .testimonial h3 {
+            margin: 0;
+            color: #333;
+        }
+        .testimonial p {
+            margin: 10px 0 0 0;
+        }
+        .review-form {
+            margin-top: 30px;
+        }
+        .review-form label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .review-form input, .review-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .review-form button {
+            background-color: #00509e;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .review-form button:hover {
+            background-color: #004080;
+        }
+        .external-reviews {
+            margin-top: 30px;
+            text-align: center;
+        }
+        .external-reviews a {
+            color: #00509e;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+        .external-reviews a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: #00509e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Guest Reviews</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="rooms.html">Rooms</a>
+        <a href="dining.html">Dining</a>
+        <a href="spa.html">Spa & Wellness</a>
+        <a href="team.html">Meet the Team</a>
+        <a href="pets.html">Pet-Friendly Stays</a>
+        <a href="giftcards.html">Gift Cards</a>
+    </nav>
+    <section>
+        <h2>What Our Guests Say</h2>
+        <!-- Testimonials -->
+        <div class="testimonial">
+            <h3>“An Unforgettable Experience!”</h3>
+            <p><strong>- Ja Morant</strong></p>
+            <p>The cozy atmosphere, delightful breakfast, and friendly staff made my stay amazing. Highly recommended!</p>
+        </div>
+        <div class="testimonial">
+            <h3>“Perfect for a Romantic Getaway”</h3>
+            <p><strong>- Kypton Rawls </strong></p>
+            <p>The Couples Retreat package was worth every penny. We felt pampered and loved every moment of our stay.</p>
+        </div>
+        <div class="testimonial">
+            <h3>“Fantastic Service and Beautiful Location”</h3>
+            <p><strong>- Chris P.</strong></p>
+            <p>From the moment I arrived, I felt at home. The staff went above and beyond, and the spa treatments were divine!</p>
+        </div>
+
+        <!-- Leave a Review -->
+        <h2>Leave a Review</h2>
+        <form class="review-form" action="https://example.com/submit-review" method="POST">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            
+            <label for="review">Your Review</label>
+            <textarea id="review" name="review" rows="5" placeholder="Share your experience" required></textarea>
+            
+            <button type="submit">Submit Review</button>
+        </form>
+
+        <!-- External Reviews -->
+        <div class="external-reviews">
+            <h2>Read More Reviews</h2>
+            <p>See what others are saying about us on these platforms:</p>
+            <a href="https://www.tripadvisor.com/" target="_blank">TripAdvisor</a>
+            <a href="https://www.google.com/maps" target="_blank">Google Reviews</a>
+            <a href="https://www.yelp.com/" target="_blank">Yelp</a>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Simple B&B. All rights reserved.</p>
+    </footer>
+</body>
+</html>
